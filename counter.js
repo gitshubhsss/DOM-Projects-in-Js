@@ -10,8 +10,11 @@ increase.addEventListener("click", () => {
 });
 
 decrease.addEventListener("click", () => {
-  document.querySelector("#num").innerText = `${cnt - 1}`;
-  cnt--;
+  while (cnt != 0) {
+    document.querySelector("#num").innerText = `${cnt - 1}`;
+    cnt--;
+    break;
+  }
 });
 
 reset.addEventListener("click", () => {
